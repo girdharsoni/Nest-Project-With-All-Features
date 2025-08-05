@@ -1,0 +1,16 @@
+### Request OTP
+POST http://localhost:3000/login-otp/send
+Content-Type: application/json
+
+{
+  "email": "girdharsoni@gmail.com"
+}
+
+### Verify OTP
+POST http://localhost:3000/login-otp/verify
+Content-Type: application/json
+
+{
+  "email": "girdharsoni@gmail.com",
+  "otp": "674007"
+}

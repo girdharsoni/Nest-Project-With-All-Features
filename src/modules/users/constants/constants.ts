@@ -1,0 +1,4 @@
+export const JWT = {
+  REFRESH_TOKEN_VALIDITY: '7d',
+  ACCESS_TOKEN_VALIDITY: '15m',
+};

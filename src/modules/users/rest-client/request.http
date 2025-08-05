@@ -1,0 +1,35 @@
+### Create User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "girdharsoni@gmail.com",
+    "name": "Girdhar Soni Second",
+    "password": "girdhar@1234"
+}
+
+### Get User With UserId
+GET http://localhost:3000/auth/1c4ff34c-c52f-4084-a1cf-a4d145b586ed
+
+### Update User
+PATCH http://localhost:3000/auth/445dc8f4-5564-4a5f-b377-abdbc7c1bd08
+Content-Type: application/json
+
+{
+    "email": "girdhar@gmail.com",
+    "password": "girdhar@5678"
+}
+
+### SignIn
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "girdharsoni@gmail.com",
+    "password": "girdhar@1234"
+}
+
+### Get User With Token
+GET http://localhost:3000/auth/3847c080-2d5d-4218-b3b7-3da925496ce8
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzODQ3YzA4MC0yZDVkLTQyMTgtYjNiNy0zZGE5MjU0OTZjZTciLCJpYXQiOjE3NTM5NzAzOTQsImV4cCI6MTc1Mzk3MTI5NH0.VMYk5NVosOKMJqMDIq9LL9OIOxMBuxqVfJl1cGdM12k

@@ -1,0 +1,32 @@
+### Create a report
+POST http://localhost:3000/reports/create
+Content-Type: application/json
+
+{
+    "name": "Monthly Sales Report",
+    "price": 36000
+}
+
+### Get all reports
+POST http://localhost:3000/reports/getAll
+Content-Type: application/json
+
+{
+    "page": 1,
+    "size": 10
+}
+
+### Get report by ID
+GET http://localhost:3000/reports/fa66ba45-8761-4df0-b87d-e839f2d9fc7d
+
+### Update report by ID
+PATCH http://localhost:3000/reports/fa66ba45-8761-4df0-b87d-e839f2d9fc7d
+Content-Type: application/json
+
+{
+    "name": "Updated Monthly Sales Report",
+    "price": 25000
+}
+
+### Delete report by ID
+DELETE http://localhost:3000/reports/8dccb532-31a7-4200-b9a1-68cde21d43ab
